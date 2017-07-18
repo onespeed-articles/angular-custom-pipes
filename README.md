@@ -3,11 +3,11 @@
 ### Requirements
 All pipes must follow this format:
 ```javascript
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core'
 @Pipe({name: 'myCustomPipe'})
 export class MyCustomPipe implements PipeTransform {
   transform(value: string) {
-    return value + ' is the best!';
+    return value + ' is the best!'
   }
 }
 ```
@@ -25,7 +25,7 @@ import { Component } from '@angular/core'
     </div>
   `
 })
-export class myComponent{
+export class MyComponent{
   favoriteFoods = ['Pizza', 'Ice Cream', 'Peanutbutter']
 }
 ```
@@ -33,7 +33,7 @@ The first argument is auto passed into your pipe's transform function. In this e
 
 ### Custom pipe with multiple arguments
 ```javascript
-import { Component, Pipe, PipeTransform } from '@angular/core';
+import { Component, Pipe, PipeTransform } from '@angular/core'
 
 @Pipe({name: 'myCustomPipe'})
 export class MyCustomPipe implements PipeTransform {
@@ -52,7 +52,7 @@ export class MyCustomPipe implements PipeTransform {
     </div>
   `
 })
-export class myComponent{
+export class MyComponent{
   limit: 3
   favoriteFoods = ['Pizza', 'Ice Cream', 'Peanutbutter', 'Egg', 'Bacon', 'Waffle']
 }
